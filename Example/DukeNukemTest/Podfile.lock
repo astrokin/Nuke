@@ -1,34 +1,16 @@
 PODS:
-  - DukeNukemCore (13.1)
-  - DukeNukemExtensions (13.1):
-    - DukeNukemCore
-  - DukeNukemUI (13.1):
-    - DukeNukemCore
-  - DukeNukemVideo (13.1):
-    - DukeNukemCore
+  - DukeNukemCore (13.2)
 
 DEPENDENCIES:
   - DukeNukemCore (from `../../`)
-  - DukeNukemExtensions (from `../../`)
-  - DukeNukemUI (from `../../`)
-  - DukeNukemVideo (from `../../`)
 
 EXTERNAL SOURCES:
   DukeNukemCore:
     :path: "../../"
-  DukeNukemExtensions:
-    :path: "../../"
-  DukeNukemUI:
-    :path: "../../"
-  DukeNukemVideo:
-    :path: "../../"
 
 SPEC CHECKSUMS:
-  DukeNukemCore: cc19b087986365bf665c5eafb702f4a29d0dc298
-  DukeNukemExtensions: 8f4727c8643bd58b0ee5ef9805dccfae980b685d
-  DukeNukemUI: d6bc8f5f8cf7b70e31a861cb7a99c47f940f240a
-  DukeNukemVideo: e8a9f2244076b83d0479cf6438a18a2362fca8f7
+  DukeNukemCore: 1f434a7cfa19739650fb5ba613fbd4ef370c2404
 
-PODFILE CHECKSUM: 2dcf1dd54c3ab3bde8a129e732c3850796f62510
+PODFILE CHECKSUM: 97145287231ef9f467d95772aa6e3083a8fa925a
 
 COCOAPODS: 1.12.1
