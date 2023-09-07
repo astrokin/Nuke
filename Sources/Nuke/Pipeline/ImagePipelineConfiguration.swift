@@ -188,7 +188,7 @@ extension ImagePipeline {
         ///   - name: Data cache name.
         ///   - sizeLimit: Size limit, by default 150 MB.
         public static func withDataCache(
-            name: String = "com.github.kean.Nuke.DataCache",
+            name: String = "com.github.kean.DukeNukem.DataCache",
             sizeLimit: Int? = nil
         ) -> Configuration {
             let dataLoader: DataLoader = {

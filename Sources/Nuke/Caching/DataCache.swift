@@ -70,7 +70,7 @@ public final class DataCache: DataCaching, @unchecked Sendable {
     }
 
     /// A queue which is used for disk I/O.
-    public let queue = DispatchQueue(label: "com.github.kean.Nuke.DataCache.WriteQueue", qos: .utility)
+    public let queue = DispatchQueue(label: "com.github.kean.DukeNukem.DataCache.WriteQueue", qos: .utility)
 
     /// A function which generates a filename for the given key. A good candidate
     /// for a filename generator is a _cryptographic_ hash function like SHA1.

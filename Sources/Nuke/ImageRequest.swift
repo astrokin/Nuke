@@ -429,7 +429,7 @@ public struct ImageRequest: CustomStringConvertible, Sendable, ExpressibleByStri
 
         /// Generates a thumbnail from the given image data.
         public func makeThumbnail(with data: Data) -> PlatformImage? {
-            Nuke.makeThumbnail(data: data, options: self)
+            DukeNukemCore.makeThumbnail(data: data, options: self)
         }
 
         var identifier: String {

@@ -89,7 +89,7 @@ extension OperationQueue {
         return operation
     }
 
-    /// Adds asynchronous operation (`Nuke.Operation`) with the given starter.
+    /// Adds asynchronous operation (`DukeNukem.Operation`) with the given starter.
     func add(_ starter: @escaping Operation.Starter) -> Operation {
         let operation = Operation(starter: starter)
         addOperation(operation)

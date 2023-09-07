@@ -41,7 +41,7 @@ public final class ImagePipeline: @unchecked Sendable {
     private let tasksProcessImage: TaskPool<ImageProcessingKey, ImageResponse, Swift.Error>
 
     // The queue on which the entire subsystem is synchronized.
-    let queue = DispatchQueue(label: "com.github.kean.Nuke.ImagePipeline", qos: .userInitiated)
+    let queue = DispatchQueue(label: "com.github.kean.DukeNukem.ImagePipeline", qos: .userInitiated)
     private var isInvalidated = false
 
     private var nextTaskId: Int64 {

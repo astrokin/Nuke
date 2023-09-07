@@ -3,7 +3,7 @@
 // Copyright (c) 2015-2023 Alexander Grebenyuk (github.com/kean).
 
 import Foundation
-import DukeNukem
+import DukeNukemCore
 
 #if !os(macOS)
 import UIKit.UIImage

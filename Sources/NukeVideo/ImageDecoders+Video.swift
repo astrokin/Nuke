@@ -7,7 +7,7 @@
 import Foundation
 import AVKit
 import AVFoundation
-import DukeNukem
+import DukeNukemCore
 
 extension ImageDecoders {
     /// The video decoder.

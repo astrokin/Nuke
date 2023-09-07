@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
-  s.name                = "DukeNukem"
-  s.version             = "13.1"
+  s.name                = "DukeNukemExtensions"
+  s.version             = "13.2"
   s.ios.deployment_target = '13.0'
   s.summary             = 'DukeNukem'
   s.homepage            = 'https://DukeNukem.com'
@@ -13,8 +13,7 @@ Pod::Spec.new do |s|
   s.static_framework    = true
   s.frameworks          = 'Foundation'
   
+  s.source_files = 'Sources/NukeExtensions/**/*.swift'
+  
   s.dependency 'DukeNukemCore'
-  s.dependency 'DukeNukemUI'
-  s.dependency 'DukeNukemVideo'
-  s.dependency 'DukeNukemExtensions'
 end

@@ -4,7 +4,7 @@
 
 import AVKit
 import Foundation
-import DukeNukem
+import DukeNukemCore
 
 extension AssetType {
     /// Returns `true` if the asset represents a video file

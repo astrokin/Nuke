@@ -38,7 +38,7 @@ func signpost<T>(_ name: StaticString, _ message: @autoclosure () -> String, _ w
     return result
 }
 
-private let log = OSLog(subsystem: "com.github.kean.Nuke.ImagePipeline", category: "Image Loading")
+private let log = OSLog(subsystem: "com.github.kean.DukeNukem.ImagePipeline", category: "Image Loading")
 
 private let byteFormatter = ByteCountFormatter()
 

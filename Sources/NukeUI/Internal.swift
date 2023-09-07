@@ -3,7 +3,7 @@
 // Copyright (c) 2015-2023 Alexander Grebenyuk (github.com/kean).
 
 import Foundation
-import DukeNukem
+import DukeNukemCore
 
 #if !os(watchOS)
 
@@ -14,7 +14,7 @@ import UIKit
 #endif
 
 import SwiftUI
-import Nuke
+import DukeNukemCore
 
 #if os(macOS)
 public typealias _PlatformBaseView = NSView

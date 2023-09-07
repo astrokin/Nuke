@@ -67,7 +67,7 @@ public final class DataLoader: DataLoading, @unchecked Sendable {
     }
 
 #if !os(macOS) && !targetEnvironment(macCatalyst)
-    private static let cachePath = "com.github.kean.Nuke.Cache"
+    private static let cachePath = "com.github.kean.DukeNukem.Cache"
 #else
     private static let cachePath: String = {
         let cachePaths = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true)

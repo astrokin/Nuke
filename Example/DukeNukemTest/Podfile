@@ -1,0 +1,10 @@
+source 'https://cdn.cocoapods.org/'
+source 'git@github.com:astrokin/podrepo.git'
+
+target 'DukeNukemTest' do
+  pod 'DukeNukem', :path => '../../'
+  # pod 'DukeNukemCore', :path => '../../'
+  # pod 'DukeNukemUI', :path => '../../'
+  # pod 'DukeNukemVideo', :path => '../../'
+  # pod 'DukeNukemExtensions', :path => '../../'
+end

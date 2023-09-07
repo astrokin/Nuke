@@ -4,7 +4,7 @@
 
 import SwiftUI
 import Combine
-import DukeNukem
+import DukeNukemCore
 
 /// An observable object that simplifies image loading in SwiftUI.
 @MainActor
