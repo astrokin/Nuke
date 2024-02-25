@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "DukeNukem"
-  s.version             = "13.3"
+  s.version             = "13.4"
   s.ios.deployment_target = '13.0'
   s.summary             = 'DukeNukem'
   s.homepage            = 'https://DukeNukem.com'
