@@ -1,6 +1,6 @@
 // The MIT License (MIT)
 //
-// Copyright (c) 2015-2023 Alexander Grebenyuk (github.com/kean).
+// Copyright (c) 2015-2024 Alexander Grebenyuk (github.com/kean).
 
 import XCTest
 import Nuke
@@ -68,7 +68,7 @@ class ImageProcessorsProtocolExtensionsTests: XCTestCase {
         XCTAssertEqual(request.processors.first?.identifier, processor.identifier)
     }
     
-#if os(iOS) || os(tvOS) || os(macOS)
+#if os(iOS) || os(tvOS) || os(macOS) || os(visionOS)
     func testPassingProcessorsUsingProtocolExtensionsCoreImageFilterWithNameOnly() throws {
         let name = "CISepiaTone"
         let processor = ImageProcessors.CoreImageFilter(name: name)

@@ -1,6 +1,6 @@
 // The MIT License (MIT)
 //
-// Copyright (c) 2015-2023 Alexander Grebenyuk (github.com/kean).
+// Copyright (c) 2015-2024 Alexander Grebenyuk (github.com/kean).
 
 import XCTest
 @testable import Nuke
@@ -61,7 +61,7 @@ final class ImageEncoderTests: XCTestCase {
         XCTAssertNil(AssetType(data)) // TODO: update when HEIF support is added
     }
     
-#if os(iOS) || os(tvOS)
+#if os(iOS) || os(tvOS) || os(visionOS)
     
     func testEncodeCoreImageBackedImage() throws {
         // Given

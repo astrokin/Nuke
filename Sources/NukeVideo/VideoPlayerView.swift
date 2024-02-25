@@ -1,6 +1,6 @@
 // The MIT License (MIT)
 //
-// Copyright (c) 2015-2023 Alexander Grebenyuk (github.com/kean).
+// Copyright (c) 2015-2024 Alexander Grebenyuk (github.com/kean).
 
 @preconcurrency import AVKit
 import Foundation
@@ -60,7 +60,7 @@ public final class VideoPlayerView: _PlatformBaseView {
 
     private var _playerLayer: AVPlayerLayer?
 
-#if os(iOS) || os(tvOS)
+#if os(iOS) || os(tvOS) || os(visionOS)
     override public func layoutSubviews() {
         super.layoutSubviews()
 
@@ -114,7 +114,7 @@ public final class VideoPlayerView: _PlatformBaseView {
             object: player?.currentItem
         )
 
-#if os(iOS) || os(tvOS)
+#if os(iOS) || os(tvOS) || os(visionOS)
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(applicationWillEnterForeground),
@@ -137,7 +137,11 @@ public final class VideoPlayerView: _PlatformBaseView {
         let playerItem = AVPlayerItem(asset: asset)
         let player = AVQueuePlayer(playerItem: playerItem)
         player.isMuted = true
-        player.preventsDisplaySleepDuringVideoPlayback = false
+#if os(visionOS)
+            player.preventsAutomaticBackgroundingDuringVideoPlayback = false
+#else
+            player.preventsDisplaySleepDuringVideoPlayback = false
+#endif
         player.actionAtItemEnd = isLooping ? .none : .pause
         self.player = player
 
@@ -169,7 +173,7 @@ public final class VideoPlayerView: _PlatformBaseView {
         }
     }
 
-#if os(iOS) || os(tvOS)
+#if os(iOS) || os(tvOS) || os(visionOS)
     override public func willMove(toWindow newWindow: UIWindow?) {
         if newWindow != nil && shouldResumeOnInterruption {
             player?.play()

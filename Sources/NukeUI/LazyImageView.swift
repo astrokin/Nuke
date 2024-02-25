@@ -1,6 +1,6 @@
 // The MIT License (MIT)
 //
-// Copyright (c) 2015-2023 Alexander Grebenyuk (github.com/kean).
+// Copyright (c) 2015-2024 Alexander Grebenyuk (github.com/kean).
 
 import Foundation
 import DukeNukemCore
@@ -373,7 +373,7 @@ public final class LazyImageView: _PlatformBaseView {
             newView.isHidden = !imageView.isHidden
             insertSubview(newView, at: 0)
             setNeedsUpdateConstraints()
-#if os(iOS) || os(tvOS)
+#if os(iOS) || os(tvOS) || os(visionOS)
             if let spinner = newView as? UIActivityIndicatorView {
                 spinner.startAnimating()
             }

@@ -1,6 +1,6 @@
 // The MIT License (MIT)
 //
-// Copyright (c) 2015-2023 Alexander Grebenyuk (github.com/kean).
+// Copyright (c) 2015-2024 Alexander Grebenyuk (github.com/kean).
 
 import Foundation
 import Nuke
@@ -67,7 +67,7 @@ extension ImageCaching {
 #if os(macOS)
 import Cocoa
 typealias _ImageView = NSImageView
-#elseif os(iOS) || os(tvOS)
+#elseif os(iOS) || os(tvOS) || os(visionOS)
 import UIKit
 typealias _ImageView = UIImageView
 #endif

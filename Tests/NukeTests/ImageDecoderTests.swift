@@ -1,6 +1,6 @@
 // The MIT License (MIT)
 //
-// Copyright (c) 2015-2023 Alexander Grebenyuk (github.com/kean).
+// Copyright (c) 2015-2024 Alexander Grebenyuk (github.com/kean).
 
 import XCTest
 @testable import Nuke
@@ -142,7 +142,7 @@ class ImageDecoderTests: XCTestCase {
         XCTAssertNil(container.data)
     }
     
-#if os(iOS) || os(tvOS) || os(macOS)
+#if os(iOS) || os(tvOS) || os(macOS) || os(visionOS)
     func testDecodeBaselineWebP() throws {
         if #available(OSX 11.0, iOS 14.0, watchOS 7.0, tvOS 999.0, *) {
             let data = Test.data(name: "baseline", extension: "webp")

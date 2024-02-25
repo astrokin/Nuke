@@ -1,6 +1,6 @@
 // The MIT License (MIT)
 //
-// Copyright (c) 2015-2023 Alexander Grebenyuk (github.com/kean).
+// Copyright (c) 2015-2024 Alexander Grebenyuk (github.com/kean).
 
 import XCTest
 @testable import Nuke
@@ -307,7 +307,7 @@ class ImageCacheTests: XCTestCase, @unchecked Sendable {
         XCTAssertEqual(cache.totalCost, 0)
     }
     
-#if os(iOS) || os(tvOS)
+#if os(iOS) || os(tvOS) || os(visionOS)
     func testThatSomeImagesAreRemovedOnDidEnterBackground() async {
         // GIVEN
         cache.costLimit = Int.max

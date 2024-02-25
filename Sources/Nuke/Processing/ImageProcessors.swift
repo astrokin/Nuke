@@ -1,6 +1,6 @@
 // The MIT License (MIT)
 //
-// Copyright (c) 2015-2023 Alexander Grebenyuk (github.com/kean).
+// Copyright (c) 2015-2024 Alexander Grebenyuk (github.com/kean).
 
 import Foundation
 
@@ -86,7 +86,7 @@ extension ImageProcessing where Self == ImageProcessors.Anonymous {
     }
 }
 
-#if os(iOS) || os(tvOS) || os(macOS)
+#if os(iOS) || os(tvOS) || os(macOS) || os(visionOS)
 
 extension ImageProcessing where Self == ImageProcessors.CoreImageFilter {
     /// Applies Core Image filter – `CIFilter` – to the image.

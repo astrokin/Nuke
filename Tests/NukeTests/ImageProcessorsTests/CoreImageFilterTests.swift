@@ -1,6 +1,6 @@
 // The MIT License (MIT)
 //
-// Copyright (c) 2015-2023 Alexander Grebenyuk (github.com/kean).
+// Copyright (c) 2015-2024 Alexander Grebenyuk (github.com/kean).
 
 import XCTest
 @testable import Nuke
@@ -9,7 +9,7 @@ import XCTest
 import UIKit
 #endif
 
-#if os(iOS) || os(tvOS) || os(macOS)
+#if os(iOS) || os(tvOS) || os(macOS) || os(visionOS)
 
 class ImageProcessorsCoreImageFilterTests: XCTestCase {
     func testApplySepia() throws {
@@ -62,7 +62,7 @@ class ImageProcessorsCoreImageFilterTests: XCTestCase {
         }
     }
     
-#if os(iOS) || os(tvOS)
+#if os(iOS) || os(tvOS) || os(visionOS)
     func testApplyFilterToCIImage() throws {
         // GIVEN image backed by CIImage
         let input = PlatformImage(ciImage: CIImage(cgImage: Test.image.cgImage!))

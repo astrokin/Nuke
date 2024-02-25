@@ -1,6 +1,6 @@
 // The MIT License (MIT)
 //
-// Copyright (c) 2015-2023 Alexander Grebenyuk (github.com/kean).
+// Copyright (c) 2015-2024 Alexander Grebenyuk (github.com/kean).
 
 import XCTest
 @testable import Nuke
@@ -66,7 +66,7 @@ class ImageThumbnailTest: XCTestCase {
         XCTAssertEqual(output.sizeInPixels, CGSize(width: 160, height: 90))
     }
 
-#if os(iOS) || os(tvOS) || os(watchOS)
+#if os(iOS) || os(tvOS) || os(watchOS) || os(visionOS)
     func testResizeImageWithOrientationRight() throws {
         // Given an image with `right` orientation. From the user perspective,
         // the image a landscape image with s size 640x480px. The raw pixel

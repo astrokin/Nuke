@@ -1,5 +1,28 @@
 # Nuke 12
 
+## Nuke 12.4
+
+*Feb 10, 2024*
+
+## What's Changed
+* Enable visionOS support for all APIs by @zachwaugh in https://github.com/kean/Nuke/pull/752
+* Update documentation by @tkersey in https://github.com/kean/Nuke/pull/747
+
+**Full Changelog**: https://github.com/kean/Nuke/compare/12.3.0...12.4.0
+
+## Nuke 12.3
+
+*Jan 6, 2024*
+
+- Add support for visionOS by @bobek-balinek in https://github.com/kean/Nuke/pull/743
+
+## Nuke 12.2
+
+*Nov 23, 2023*
+
+- Add another file type signature for .m4v files by @leonid-shevtsov in https://github.com/kean/Nuke/pull/735
+- Added the onStart callback to SwiftUI.LazyImage by @urbaneewe in https://github.com/kean/Nuke/pull/736
+
 ## Nuke 12.1.6
 
 *Aug 19, 2023*
